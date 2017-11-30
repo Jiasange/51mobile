@@ -1,0 +1,307 @@
+<html>
+<head lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="UTF-8">
+    <title>51审车</title>
+    <link rel="stylesheet" href="./css/weui.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <section>
+        <div class="weui-navbar__item weui-bar__item_on nav" id="pos1">
+            <div class="nav_item">
+                <a href="#">
+                    <img src="./img/mobile_logo.png" alt="">
+                </a>
+                <div class="page__bd page__bd_spacing nav_choice">
+                    <a href="javascript:;" class="weui-btn weui-btn_default nav_link" id="showPicker">
+                        <span>太原</span>
+                    </a>
+                    <i class="nav_choice_icon">
+                        <img src="./img/mobile_arrow_down.png" alt="">
+                    </i>
+                </div>
+            </div>
+            <ul class="nav_item">
+                <li class="nav_menu">
+                    <a href="#"><img src="./img/mobile_more.png" alt=""></a>
+                    <ul class="nav_list">
+                        <li onclick="clickScroll('#pos1');">首页</li>
+                        <li onclick="clickScroll('#pos2');">服务流程</li>
+                        <li onclick="clickScroll('#pos3');">优势</li>
+                        <li onclick="clickScroll('#pos4');">关于我们</li>
+                        <li onclick="clickScroll('#pos5');">代理招募</li>
+                    </ul>
+                </li>
+            </ul> 
+        </div>
+        <div class="banner">
+            <div class="banner_text">
+                <p>全省比价&nbsp;&nbsp;快速审车</p>
+                <p class="banner_text__part">51审车&nbsp;&nbsp;您身边的审车专家</p>
+            </div>
+            <div class="weui-cell weui-cell_vcode banner_ipt">
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="tel" placeholder="请输入您的手机号码">
+                </div>
+                <div class="weui-cell__ft banner_btn">
+                    <a href="javascript:;" class="weui-btn banner_btn__text">立即预约</a>
+                </div>
+            </div>
+        </div>
+        <div class="weui-grids" style="background:#fff;">
+            <a href="javascript:;" class="weui-grid">
+                <div class="weui-grid__icon mobile_grids__range">
+                    <img src="./img/mobile_car.png" alt="">
+                </div>
+                <p class="weui-grid__label">车辆年检</p>
+            </a>
+            <a href="javascript:;" class="weui-grid">
+                <div class="weui-grid__icon mobile_grids__range">
+                    <img src="./img/mobile_check.png" alt="">
+                </div>
+                <p class="weui-grid__label">车辆换标</p>
+            </a>
+            <a href="javascript:;" class="weui-grid">
+                <div class="weui-grid__icon mobile_grids__range">
+                    <img src="./img/mobile_safe.png" alt="">
+                </div>
+                <p class="weui-grid__label">车险</p>
+            </a>
+            <a href="javascript:;" class="weui-grid">
+                <div class="weui-grid__icon mobile_grids__range">
+                    <img src="./img/mobile_search.png" alt="">
+                </div>
+                <p class="weui-grid__label">违章查询</p>
+            </a>
+            <a href="javascript:;" class="weui-grid">
+                <div class="weui-grid__icon mobile_grids__range">
+                    <img src="./img/mobile_issue.png" alt="">
+                </div>
+                <p class="weui-grid__label">补办车牌</p>
+            </a>
+            <a href="javascript:;" class="weui-grid">
+                <div class="weui-grid__icon mobile_grids__range">
+                    <img src="./img/mobile_entrust.png" alt="">
+                </div>
+                <p class="weui-grid__label">异地年检委托</p>
+            </a>
+        </div>
+        <div class="main">
+            <div class="main_item" id="pos2">
+                <div class="main_item__title">服务流程</div>
+                <div class="main__procedure">
+                    <div class="weui-cells main_service">
+                        <div class="main_service__num">1</div>
+                        <div class="weui-cell main_service__text">
+                            <div class="weui-cell__bd main_service__title">
+                                <p>网上预约</p>
+                            </div>
+                            <div class="weui-cell__ft main_service__para">扫描二维码或网页填写信息</div>
+                        </div>
+                    </div>
+                    <div class="weui-cells main_service">
+                        <div class="main_service__num">2</div>
+                        <div class="weui-cell main_service__text">
+                            <div class="weui-cell__bd main_service__title">
+                                <p>电话回访</p>
+                            </div>
+                            <div class="weui-cell__ft main_service__para">会有客服联系您，为您安排审车事宜</div>
+                        </div>
+                    </div>
+                    <div class="weui-cells main_service">
+                        <div class="main_service__num">3</div>
+                        <div class="weui-cell main_service__text">
+                            <div class="weui-cell__bd main_service__title">
+                                <p>开始审车</p>
+                            </div>
+                            <div class="weui-cell__ft main_service__para">自驾或代驾到审车站，进行审车</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_item" id="pos3">
+                <div class="main_item__title">我们的优势</div>
+                <div class="weui-grids">
+                    <a href="javascript:;" class="weui-grid main_item_link">
+                        <div class="weui-grid__icon mobile_grids__adv">
+                            <img src="./img/mobile_fast.png" alt="">
+                        </div>
+                        <div class="weui-grid__label main_text__adv">
+                            <p class="main_title__adv">审车更效率</p>
+                            <p class="main_text__part">网上预约，线下审车，免去排队烦恼</p>
+                        </div>     
+                    </a>
+                    <a href="javascript:;" class="weui-grid main_item_link">
+                        <div class="weui-grid__icon mobile_grids__adv">
+                            <img src="./img/mobile_vip.png" alt="">
+                        </div>
+                        <div class="weui-grid__label main_text__adv">
+                            <p class="main_title__adv">专人接待</p>
+                            <p class="main_text__part">专业的接待人员为您的爱车保驾护航</p>
+                        </div>    
+                    </a>
+                    <a href="javascript:;" class="weui-grid main_item_link">
+                        <div class="weui-grid__icon mobile_grids__adv">
+                            <img src="./img/mobile_correct.png" alt="">
+                        </div>
+                        <div class="weui-grid__label main_text__adv">
+                            <p class="main_title__adv">标准化管理</p>
+                            <p class="main_text__part">流程化规章制度，效率高，更可靠</p>
+                        </div>    
+                    </a>
+                    <a href="javascript:;" class="weui-grid main_item_link">
+                        <div class="weui-grid__icon mobile_grids__adv">
+                            <img src="./img/mobile_personal.png" alt="">
+                        </div>
+                        <div class="weui-grid__label main_text__adv">
+                            <p class="main_title__adv">专驾代审</p>
+                            <p class="main_text__part">专业的代驾司机、代审协议、代驾险，为您的爱车提供三重保护</p>
+                        </div>   
+                    </a>
+                </div>
+            </div>
+            <div class="main_item" id="pos4">
+                <div class="main_item__title">关于我们</div>
+                <div class="main_pic__us">
+                    <img src="./img/mobile_us.png" alt="">
+                    <div class="main_text__us">
+                        <h3 class="main_title__us">服务理念</h3>
+                        <p class="main_title__text">安全、专业、优质、高效</p>
+                    </div>
+                </div>
+                <div class="main_para__us">
+                    <p class="main_para__part">51审车是由太原网元科技有限公司鼎力打造的“驾驶人综合会员服务平台”，为广大司机朋友提供专业、高效的汽车后市场服务。我们的服务理念是安全、专业、优质、高效，我们的愿景是成为广大司机朋友身边的车务服务专家。</p>
+                    <p class="main_para__part">51审车崇尚现代服务理念，一切以客户需求为导向，诚信为本、品质服务。可以为本地客户提供一站式上门服务，接受客户委托代理各类车驾管业务。</p>
+                    <p class="main_para__part">51审车经过多年的发展，服务范围已经不限于太原的司机朋友和车辆，在互联网时代的背景下，目前在山西省多地有着专业的合作伙伴，可以为本地司机和车辆提供服务。我们立足太原，服务山西，是您身边的车驾管服务专家，无论您身处何处，我们都在您身边！</p>
+                </div>
+            </div>
+            <div class="main_item">
+                <div class="main_item__title">常见疑问</div>
+                <ul class="main_item__parent">
+                    <li class="main_item__menu">
+                        <div class="weui-cells main_item__question main_item__menu__title">
+                            <div class="weui-cell__hd">
+                                <img src="./img/mobile_question.png" alt="" style="width:20px;margin-right:5px;">
+                            </div>
+                            <div class="weui-cell__bd main_text__question">
+                                <p>审车有车型要求吗？</p>
+                                <i class="main_icon__question"></i>
+                            </div>
+                        </div>
+                        <div class="main_text__answer">
+                            <p class="">仅限7座以下（含7座）蓝牌非营运型机动车。</p>
+                        </div>
+                    </li>
+                    <li class="main_item__menu">
+                        <div class="weui-cells main_item__question main_item__menu__title">
+                            <div class="weui-cell__hd">
+                                <img src="./img/mobile_question.png" alt="" style="width:20px;margin-right:5px;">
+                            </div>
+                            <div class="weui-cell__bd main_text__question">
+                                <p>审车有地区要求吗？</p>
+                                <i class="main_icon__question"></i>
+                            </div>
+                        </div>
+                        <div class="main_text__answer">
+                            <p class="">没有，我们可以提供异地委托年检服务。</p>
+                        </div>
+                    </li>
+                    <li class="main_item__menu">
+                        <div class="weui-cells main_item__question main_item__menu__title">
+                            <div class="weui-cell__hd">
+                                <img src="./img/mobile_question.png" alt="" style="width:20px;margin-right:5px;">
+                            </div>
+                            <div class="weui-cell__bd main_text__question">
+                                <p>代驾审车安全吗？</p>
+                                <i class="main_icon__question"></i>
+                            </div>
+                        </div>
+                        <div class="main_text__answer">
+                            <p class="">安全，我们与专业的代驾公司合作，代驾司机均为征信良好、本地户口、无犯罪记录、无重大疾病的职业司机。在代驾时签订《代驾协议》，还有免费的代驾险赠送，为您的爱车提供全方位多角度的保护。</p>
+                        </div>
+                    </li>
+                    <li class="main_item__menu">
+                        <div class="weui-cells main_item__question main_item__menu__title">
+                            <div class="weui-cell__hd">
+                                <img src="./img/mobile_question.png" alt="" style="width:20px;margin-right:5px;">
+                            </div>
+                            <div class="weui-cell__bd main_text__question">
+                                <p>审车前需要准备什么？</p>
+                                <i class="main_icon__question"></i>
+                            </div>
+                        </div>
+                        <div class="main_text__answer">
+                            <p class="">需携带行车证原件及副本和交强险保单副本；</br>检车前机动车交通违法需处理完毕；</br>车辆大灯、尾灯、刹车灯无故障；</br>机动车无改装，如车身颜色、轮毂、氙气灯等；</br>机动车需配备警示三脚架。</p>
+                        </div>
+                    </li>
+                    <li class="main_item__menu">
+                        <div class="weui-cells main_item__question main_item__menu__title">
+                            <div class="weui-cell__hd">
+                                <img src="./img/mobile_question.png" alt="" style="width:20px;margin-right:5px;">
+                            </div>
+                            <div class="weui-cell__bd main_text__question">
+                                <p>在上线时才发现我的车没有处理违章该怎么办？</p>
+                                <i class="main_icon__question"></i>
+                            </div>
+                        </div>
+                        <div class="main_text__answer">
+                            <p class="">您的车也可以上线检测，只是需要在处理完违章之后才可以领标。</p>
+                        </div>
+                    </li>
+                    <li class="main_item__menu">
+                        <div class="weui-cells main_item__question main_item__menu__title">
+                            <div class="weui-cell__hd">
+                                <img src="./img/mobile_question.png" alt="" style="width:20px;margin-right:5px;">
+                            </div>
+                            <div class="weui-cell__bd main_text__question">
+                                <p>我的车审车时间还早，能提前预约吗？</p>
+                                <i class="main_icon__question"></i>
+                            </div>
+                        </div>
+                        <div class="main_text__answer">
+                            <p class="">您可以在任何时间预约，预约时选择审车时间。在临近审车时间时，会有专门的客服人员联系您，为您提供审车服务。</br>审车时间可以选择在有效期前的90天。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="main_item" id="pos5">
+                <div class="main_item__title">代理招募</div>
+                <div class="main__proxy">
+                    <p class="main_text__proxy">51审车·地区代理招募</p>
+                    <p>您身边的审车专家</p>
+                    <div class="weui-cell main_ipt__text">
+                        <div class="weui-cell__hd main_ipt__title">
+                            <label class="">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</label>
+                        </div>
+                        <div class="weui-cell__bd main_ipt__value">
+                            <input class="weui-input" type="text" placeholder="请输入您的姓名">
+                        </div>
+                    </div>
+                    <div class="weui-cell main_ipt__text" style="margin-top:0;">
+                        <div class="weui-cell__hd main_ipt__title">
+                            <label class="">联系方式：</label>
+                        </div>
+                        <div class="weui-cell__bd main_ipt__value">
+                            <input class="weui-input" type="tel" placeholder="请输入您的手机号码">
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="weui-btn main_btn__proxy">申请代理</a>
+                </div>   
+            </div>
+        </div>
+        <div class="footer">
+            <p>太原网元科技有限公司</p>
+            <p>晋ICP备15053955号&nbsp;ICP证151071号</p>
+        </div>
+    </section>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/jweixin-1.0.0.js"></script>
+    <script src="./js/weui.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
+
+
+    
