@@ -34,11 +34,11 @@ section {
 .nav_list {
     position: absolute;
     font-size: 1.4rem;
-    width: 7rem;
+    width: 10rem;
     padding: 0.5rem 0;
     background: #fff;
-    line-height: 2rem;
-    left: -3rem;
+    line-height: 3rem;
+    left: -6rem;
     display: none;
 }
 .nav_choice {
