@@ -76,9 +76,25 @@ $(function () {
 })
 
 // 导航栏点击跳转到指定位置
-function clickScroll(ele) {
+function clickScroll(ele, item) {
     var scroll_offset = $(ele).offset();
     $("body,html").animate({
         scrollTop: scroll_offset.top - $(".nav").height() * 4
     }, 1000);
+    $(item).css({"background":"firebrick",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
+
 }
+
+// ///滚动导航栏相应变色
+// $(window).scroll(function () {
+//     if($(this).scrollTop() >= 0 && $(this).scrollTop() < $(".kw-banner").offset().top- $(".kw-header_nav_content").height()) {
+//         $(".kw-header_nav__lis1").css("color","#fdc017").siblings().css("color","#fff");
+//     } else if ( $(this).scrollTop() >= $(".kw-banner").offset().top- $(".kw-header_nav_content").height() && $(this).scrollTop() < $(".kw-main").offset().top - $(".kw-header_nav_content").height()){
+//         $(".kw-header_nav__lis2").css("color","#fdc017").siblings().css("color","#fff");
+//     }
+//     else if ( $(this).scrollTop() >= $(".kw-main").offset().top - $(".kw-header_nav_content").height() && $(this).scrollTop() < $(".kw-article_title").offset().top -$(".kw-header_nav_content").height()){
+//         $(".kw-header_nav__lis3").css("color","#fdc017").siblings().css("color","#fff");
+//     }else{
+//         $(".kw-header_nav__lis4").css("color","#fdc017").siblings().css("color","#fff");
+//     }
+// });
