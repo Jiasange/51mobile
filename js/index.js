@@ -73,6 +73,32 @@ $(function () {
             a.next(b).hide();
         }    
     })
+
+    //点击弹窗
+    $('.weui-dialog__btn').on('click', function () {
+        $(this).parents('.js_dialog').fadeOut(200);
+    });
+    $(".banner_btn__text").on('click', function () {
+        $("#dialog1").fadeIn(200);
+    })
+    $(".main_btn__proxy").on('click', function () {
+        $("#dialog2").fadeIn(200);
+    })
+        
+    //滚动导航栏相应变色
+    $(window).scroll(function () {
+        if($(this).scrollTop() >= 0 && $(this).scrollTop() < $("#pos2").offset().top- $(".nav").height()*4) {
+            $(".nav_list__ele1").css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
+        } else if ( $(this).scrollTop() >= $("#pos2").offset().top- $(".nav").height()*4 && $(this).scrollTop() < $("#pos3").offset().top - $(".nav").height()*4){
+            $(".nav_list__ele2").css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
+        } else if ( $(this).scrollTop() >= $("#pos3").offset().top - $(".nav").height()*4 && $(this).scrollTop() < $("#pos4").offset().top -$(".nav").height()*4){
+            $(".nav_list__ele3").css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
+        } else if ( $(this).scrollTop() >= $("#pos4").offset().top -$(".nav").height()*4 && $(this).scrollTop() < $("#pos5").offset().top -$(".nav").height()*4){
+            $(".nav_list__ele4").css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
+        } else {
+            $(".nav_list__ele5").css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
+        }
+    });
 })
 
 // 导航栏点击跳转到指定位置
@@ -82,20 +108,4 @@ function clickScroll(ele, item) {
         scrollTop: scroll_offset.top - $(".nav").height() * 4
     }, 1000);
     $(item).css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
-
 }
-
-// ///滚动导航栏相应变色
-$(window).scroll(function () {
-    if($(this).scrollTop() >= 0 && $(this).scrollTop() < $("#pos2").offset().top- $(".nav").height()*4) {
-        $(".nav_list__ele1").css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
-    } else if ( $(this).scrollTop() >= $("#pos2").offset().top- $(".nav").height()*4 && $(this).scrollTop() < $("#pos3").offset().top - $(".nav").height()*4){
-        $(".nav_list__ele2").css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
-    } else if ( $(this).scrollTop() >= $("#pos3").offset().top - $(".nav").height()*4 && $(this).scrollTop() < $("#pos4").offset().top -$(".nav").height()*4){
-        $(".nav_list__ele3").css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
-    } else if ( $(this).scrollTop() >= $("#pos4").offset().top -$(".nav").height()*4 && $(this).scrollTop() < $("#pos5").offset().top -$(".nav").height()*4){
-        $(".nav_list__ele4").css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
-    } else {
-        $(".nav_list__ele5").css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
-    }
-});
