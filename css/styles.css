@@ -7,7 +7,7 @@ section {
     justify-content: space-between;
     height: 1.5rem;
     background: #fff;
-    padding:  1rem 2rem;
+    padding: 2rem;
     z-index: 9999;
 }
 .bgnav {
@@ -56,16 +56,16 @@ section {
     content: none;
 }
 .banner {
-    height: 16rem;
     background: url(../img/mobile_banner.png) no-repeat;
     background-size: 100% 100%;
+    overflow: hidden;
 }
 .banner_text {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding: 2rem 2rem 0 0;
-    font-size: 2.8rem;
+    font-size: 2rem;
     color: #ff5a37;
     font-weight: 700;
 }
@@ -137,7 +137,7 @@ section {
     line-height: 2rem;
 }
 .main_service__text:before {
-    content:none;
+    border: 0;
 }
 .main_service__para {
     color: #fff;
@@ -158,6 +158,9 @@ section {
 }
 .main_text__adv {
     white-space: normal;
+}
+.main_text__adv3 {
+    padding-bottom: 1.6rem;
 }
 .main_text__part {
     color: #666666;
@@ -247,6 +250,9 @@ section {
 .main_ipt__text {
     margin-left: -6rem;
     margin-top: 5rem;
+}
+.main_ipt__text:before {
+    border: 0;
 }
 .main_ipt__title {
     font-size: 1.4rem;
