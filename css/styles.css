@@ -7,7 +7,7 @@ section {
     justify-content: space-between;
     height: 1.5rem;
     background: #f3f5f9;
-    opacity: 0.8;
+    opacity: 0.9;
     padding: 2rem;
     z-index: 9999;
 }
@@ -162,7 +162,7 @@ section {
     white-space: normal;
 }
 .main_text__adv3 {
-    padding-bottom: 1.6rem;
+    padding-bottom: 1.7rem;
 }
 .main_text__part {
     color: #666666;
