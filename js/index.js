@@ -81,20 +81,21 @@ function clickScroll(ele, item) {
     $("body,html").animate({
         scrollTop: scroll_offset.top - $(".nav").height() * 4
     }, 1000);
-    $(item).css({"background":"firebrick",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
+    $(item).css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
 
 }
 
 // ///滚动导航栏相应变色
-// $(window).scroll(function () {
-//     if($(this).scrollTop() >= 0 && $(this).scrollTop() < $(".kw-banner").offset().top- $(".kw-header_nav_content").height()) {
-//         $(".kw-header_nav__lis1").css("color","#fdc017").siblings().css("color","#fff");
-//     } else if ( $(this).scrollTop() >= $(".kw-banner").offset().top- $(".kw-header_nav_content").height() && $(this).scrollTop() < $(".kw-main").offset().top - $(".kw-header_nav_content").height()){
-//         $(".kw-header_nav__lis2").css("color","#fdc017").siblings().css("color","#fff");
-//     }
-//     else if ( $(this).scrollTop() >= $(".kw-main").offset().top - $(".kw-header_nav_content").height() && $(this).scrollTop() < $(".kw-article_title").offset().top -$(".kw-header_nav_content").height()){
-//         $(".kw-header_nav__lis3").css("color","#fdc017").siblings().css("color","#fff");
-//     }else{
-//         $(".kw-header_nav__lis4").css("color","#fdc017").siblings().css("color","#fff");
-//     }
-// });
+$(window).scroll(function () {
+    if($(this).scrollTop() >= 0 && $(this).scrollTop() < $("#pos2").offset().top- $(".nav").height()*4) {
+        $(".nav_list__ele1").css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
+    } else if ( $(this).scrollTop() >= $("#pos2").offset().top- $(".nav").height()*4 && $(this).scrollTop() < $("#pos3").offset().top - $(".nav").height()*4){
+        $(".nav_list__ele2").css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
+    } else if ( $(this).scrollTop() >= $("#pos3").offset().top - $(".nav").height()*4 && $(this).scrollTop() < $("#pos4").offset().top -$(".nav").height()*4){
+        $(".nav_list__ele3").css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
+    } else if ( $(this).scrollTop() >= $("#pos4").offset().top -$(".nav").height()*4 && $(this).scrollTop() < $("#pos5").offset().top -$(".nav").height()*4){
+        $(".nav_list__ele4").css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
+    } else {
+        $(".nav_list__ele5").css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
+    }
+});
