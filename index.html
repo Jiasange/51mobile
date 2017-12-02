@@ -43,11 +43,9 @@
             </div>
             <div class="weui-cell weui-cell_vcode banner_ipt">
                 <div class="weui-cell__bd">
-                    <input class="weui-input" type="tel" placeholder="请输入您的手机号码">
-                </div>
-                <div class="weui-cell__ft banner_btn">
-                    <a href="javascript:;" class="weui-btn banner_btn__text">立即预约</a>
-                </div>
+                    <input class="weui-input" id="ipt1" type="tel" placeholder="请输入您的手机号码">
+                </div>           
+                <a href="javascript:;" class="weui-btn banner_btn__text" id="btn1" onclick="clickPop(1, 1, 1)">立即预约</a>   
             </div>
             <div class="js_dialog" id="dialog1" style="display:none;">
                 <div class="weui-mask"></div>
@@ -297,10 +295,10 @@
                             <label class="">联系方式：</label>
                         </div>
                         <div class="weui-cell__bd main_ipt__value">
-                            <input class="weui-input" type="tel" placeholder="请输入您的手机号码">
+                            <input class="weui-input" id="ipt2" type="tel" placeholder="请输入您的手机号码">
                         </div>
                     </div>
-                    <a href="javascript:;" class="weui-btn main_btn__proxy">申请代理</a>
+                    <a href="javascript:;" class="weui-btn main_btn__proxy" id="btn2" onclick="clickPop(2, 2, 2)">申请代理</a>
                     <div class="js_dialog" id="dialog2" style="display:none;">
                         <div class="weui-mask"></div>
                         <div class="weui-dialog">
@@ -321,6 +319,7 @@
             <p>太原网元科技有限公司</p>
             <p>晋ICP备15053955号&nbsp;ICP证151071号</p>
         </div>
+        <div class="weui-toptips weui-toptips_warn js_tooltips pop" style="">手机号格式不正确，请重新输入！</div>
     </section>
     <script src="./js/jquery-3.2.1.min.js"></script>
     <script src="./js/jweixin-1.0.0.js"></script>
@@ -328,33 +327,3 @@
     <script src="./js/index.js"></script>
 </body>
 </html>
-
-
-
-
-    
-    
-
-    
-        
-        <!-- <div class="js_dialog" id="iosDialog1" style="display: none;">
-            <div class="weui-mask"></div>
-            <div class="weui-dialog">
-                <div class="weui-dialog__hd"><strong class="weui-dialog__title">弹窗标题</strong></div>
-                <div class="weui-dialog__bd">弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内</div>
-                <div class="weui-dialog__ft">
-                    <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">辅助操作</a>
-                    <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">主操作</a>
-                </div>
-            </div>
-        </div> -->
-       
- 
-
-        
-        
-    
-
-
-
-    

@@ -9,7 +9,7 @@ section {
     background: #f3f5f9;
     opacity: 0.9;
     padding: 2rem;
-    z-index: 9999;
+    z-index: 1;
 }
 .bgnav {
     position: fixed;
@@ -79,14 +79,14 @@ section {
     margin: 3rem;
     margin-bottom: 1rem;
 }
-.banner_btn {
-    background: #ff5a37;
-}
 .banner_btn__text {
+    display: block;
     color: #fff;
+    font-size: 1.6rem;
+    background: #ff5a37;
     border-left: 0;
     padding-right: 0 1.5rem;
-    font-size: 1.6rem;
+    border-radius: 0;
 }
 .mobile_grids__range {
     width: 4rem;
@@ -291,4 +291,9 @@ section {
     line-height: 2rem;
     background: #444444;
     padding: 1.5rem 0;
+}
+.pop {
+    background: #ff5a37;
+    display:none;
+    z-index:2;
 }

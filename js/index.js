@@ -73,21 +73,10 @@ $(function () {
             a.next(b).hide();
         }    
     })
-
-    //点击弹窗
-    $('.weui-dialog__btn').on('click', function () {
-        $(this).parents('.js_dialog').fadeOut(200);
-    });
-    $(".banner_btn__text").on('click', function () {
-        $("#dialog1").fadeIn(200);
-    })
-    $(".main_btn__proxy").on('click', function () {
-        $("#dialog2").fadeIn(200);
-    })
         
     //滚动导航栏相应变色
     $(window).scroll(function () {
-        if($(this).scrollTop() >= 0 && $(this).scrollTop() < $("#pos2").offset().top- $(".nav").height()*4) {
+        if($(this).scrollTop() >= 0 && $(this).scrollTop() < $("#pos2").offset().top - $(".nav").height()*4) {
             $(".nav_list__ele1").css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
         } else if ( $(this).scrollTop() >= $("#pos2").offset().top- $(".nav").height()*4 && $(this).scrollTop() < $("#pos3").offset().top - $(".nav").height()*4){
             $(".nav_list__ele2").css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
@@ -108,4 +97,26 @@ function clickScroll(ele, item) {
         scrollTop: scroll_offset.top - $(".nav").height() * 4
     }, 1000);
     $(item).css({"background":"#ff5a37",color:"#fff"}).siblings().css({"background":"#f3f5f9","color":"#333"});
+}
+
+// 点击确认弹窗、手机号正则验证
+function clickPop(index1, index2, index3){
+    var btn1 = $("#btn" + index1);
+    $(btn1).on('click', function () {
+        var ipt = $("#ipt" + index2).val();
+        if (!(/^1[34578]\d{9}$/.test(ipt))) {
+            var $tooltips = $('.js_tooltips');
+            if ($tooltips.css('display') != 'none') return;
+            $tooltips.css('display', 'block');
+            setTimeout(function () {
+                $tooltips.css('display', 'none');
+            }, 2000);
+            return false;
+        } else {
+            $("#dialog" + index3).fadeIn(200);
+            $('.weui-dialog__btn').on('click', function () {
+                $(this).parents('.js_dialog').fadeOut(200);
+            });
+        }
+    })
 }
